@@ -24,3 +24,11 @@ const cards = document.getElementsByClassName("card");
 for (const card of cards) {
   card.style.borderRadius = "30px";
 }
+
+/* 
+    ৫. কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং 
+    সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
+*/
+function btnClicked() {
+  console.log("Button is clicked");
+}
