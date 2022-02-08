@@ -13,5 +13,14 @@ for (const h2Tag of allH2Tag) {
     সেকশনের ব্যাকগ্রাউন্ড কালার tomato করে দিতে পারো কিনা। 
 */
 
-const backpackBG = (document.getElementById("backpack").style.backgroundColor =
-  "tomato");
+document.getElementById("backpack").style.backgroundColor = "tomato";
+
+/* 
+    ৪. card ক্লাস যতগুলা জায়গায় ইউজ করা হয়েছে সবগুলা কার্ড এর 
+    বর্ডার রেডিয়াস ৩০px করে দিতে পারো কিনা 
+*/
+
+const cards = document.getElementsByClassName("card");
+for (const card of cards) {
+  card.style.borderRadius = "30px";
+}
