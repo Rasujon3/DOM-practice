@@ -82,8 +82,19 @@ const image = document.getElementById("shoes-img-one");
 //Now, we need to add an Event Listener to listen when the image gets mouse over.
 
 image.addEventListener("mouseenter", function () {
-  image.src = "../images/bags/bag-1.png";
+  image.src = "../images/shoes/shoe-3.png";
 });
 image.addEventListener("mouseout", function () {
   image.src = "../images/shoes/shoe-1.png";
+});
+
+/* 
+    ৯. (অপশনাল) নিচের যে LET'S STAY IN TOUCH আছে সেখানে 
+    কোন খালি জায়গায় ডাবল ক্লিক করলে ঐটার পিছনের কালার চেইঞ্জ 
+    হয়ে যাবে। 
+*/
+
+const subscribeSection = document.getElementById("subscribe");
+subscribeSection.addEventListener("dblclick", function () {
+  subscribeSection.style.backgroundColor = "green";
 });
