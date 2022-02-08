@@ -71,3 +71,19 @@ document
     const deleteField = document.getElementById("delete-confirm");
     console.log(deleteField.value);
   });
+
+/* 
+    ৮. (অপশনাল) একটা মজার চ্যালেঞ্জ। কোন একটা ইমেজ এর উপরে 
+    mouseenter করলে সেই ইমেজটা চেইঞ্জ হয়ে যাবে। একটু গুগলে সার্চ দিয়ে দেখো। 
+    জিনিসটা কিভাবে করা যেতে পারে। 
+*/
+const image = document.getElementById("shoes-img-one");
+
+//Now, we need to add an Event Listener to listen when the image gets mouse over.
+
+image.addEventListener("mouseenter", function () {
+  image.src = "../images/bags/bag-1.png";
+});
+image.addEventListener("mouseout", function () {
+  image.src = "../images/shoes/shoe-1.png";
+});
